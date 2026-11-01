@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Voltix Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
+    <meta name="robots" content="noindex, nofollow">
+
+<body>
+
+    <header>
+        <nav class="site-nav">
+            <a href="index.html" class="logo">
+                <img src="logo.webp" alt="Voltix Mobile Logo">
+            </a>
+
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+                <a href="contact.html">Contact</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+        <p>Please enter your details to complete your order.</p>
+
+        <form id="checkout-form">
+
+            <h2>Customer Information</h2>
+
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="fullName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h2>Delivery Information</h2>
+
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="suburb">Suburb</label>
+            <input type="text" id="suburb" name="suburb" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code" name="postalCode"
+                   inputmode="numeric" required>
+
+            <h2>Order Summary</h2>
+
+            <ul id="checkout-items"></ul>
+
+            <p>Subtotal: <strong id="checkout-subtotal">R0.00</strong></p>
+            <p>Delivery: <strong id="checkout-delivery">R0.00</strong></p>
+            <p class="checkout-total">
+                Total: <strong id="checkout-total">R0.00</strong>
+            </p>
+
+            <button type="submit" id="place-order">Place Order</button>
+
+            <p id="checkout-message" role="status"></p>
+
+        </form>
+
+        <p><a href="cart.html">Return to Cart</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Voltix Mobile. All rights reserved. <a href="orders.html">Orders</a></p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+VOLTIX MOBILE — SEO, SPEED & SECURITY NOTES
+
+Prepared while the site is running locally in VS Code Live Server. Search engines cannot crawl localhost.
+
+BEFORE PUBLISHING
+1. Choose your hosting provider and publish the site over HTTPS.
+2. Rename sitemap.xml to sitemap.xml.
+3. Replace every YOUR-DOMAIN.com in sitemap.xml with your real domain.
+4. In robots.txt, remove the # from the Sitemap line and replace YOUR-DOMAIN.com.
+5. Upload robots.txt and sitemap.xml to the website root (the same folder as index.html).
+6. Submit https://YOUR-DOMAIN.com/sitemap.xml in Google Search Console.
+
+WHAT WAS CHANGED
+- robots.txt allows public pages and disallows cart, checkout and the demo orders page.
+- sitemap.xml lists only the public pages: home, about, products and contact.
+- Cart, checkout and orders pages are marked noindex/nofollow.
+- The large PNG logo was converted to WebP and HTML references updated.
+- Product/content images now load lazily and decode asynchronously.
+- JPEG images were recompressed while keeping their filenames.
+- _headers contains security headers for Netlify hosting. Other hosts need equivalent headers in their own configuration.
+
+SECURITY LIMITATIONS
+This is a front-end demonstration. localStorage orders are stored in the visitor's browser and are not a secure, shared order database. The orders.html page is not protected by a login. Do not use it for real customer data or real payments until a backend, authentication, server-side validation and a secure payment provider are added.
+
+The contact form and checkout also need a secure backend/service to actually deliver messages or process orders. Client-side validation alone is not security.

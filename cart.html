@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your Voltix Mobile shopping cart.">
+    <title>Your Cart | Voltix Mobile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
+    <meta name="robots" content="noindex, nofollow">
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="site-nav">
+            <a class="logo" href="index.html" aria-label="Voltix Mobile homepage">
+                <img src="logo.webp" alt="Voltix Mobile Logo">
+            </a>
+
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart -->
+    <main class="shopping-cart">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected products before continuing.</p>
+
+        <section class="cart-panel">
+            <h2>Cart Items</h2>
+
+            <ul id="cart-items">
+                <li>Your cart is empty.</li>
+            </ul>
+
+            
+<div class="cart-summary">
+    <p>Items: <strong class="cart-count">0</strong></p>
+    <p>Subtotal: <strong class="cart-total">R0.00</strong></p>
+    <p>Delivery: <strong id="delivery-fee">R60.00</strong></p>
+    <p class="total">
+        Total: <strong id="final-total">R60.00</strong>
+    </p>
+</div>
+
+
+            
+<div class="cart-actions">
+    <a href="products.html">Continue Shopping</a>
+    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+    <button type="button" id="clear-cart">Clear Cart</button>
+</div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Voltix Mobile. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
