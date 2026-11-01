@@ -389,9 +389,19 @@ footer p {
         padding: 45px 15px;
     }
 
+    .category-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
     .category {
         width: 100%;
         max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .site-main > p {
+        text-align: center;
     }
 
     .product {
