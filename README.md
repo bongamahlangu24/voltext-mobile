@@ -48,8 +48,6 @@ Voltix-Mobile/
 └── images/
 ```
 
-*Note: The project structure above is illustrative. Actual filenames and folders may differ.*
-
 ## Running the Project
 
 1. Clone or download the repository.
@@ -81,4 +79,3 @@ Developed by **Bonga Mahlangu**.
 
 ---
 
-*Voltix Mobile – Quality accessories. Convenient shopping.*
